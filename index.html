@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <title>DarkCode – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Prosta, responsywna strona DarkCode – portfolio i kontakt." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo">DarkCode</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#about">O mnie</a></li>
+          <li><a href="#projects">Projekty</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero__content">
+        <h1>Coding the dark side of the Web</h1>
+        <p>Tworzę wydajne, eleganckie aplikacje webowe i pluginy Minecraft.</p>
+        <a href="#projects" class="btn">Zobacz projekty</a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container two-col">
+        <div>
+          <h2>O mnie</h2>
+          <p>
+            Nazywam się ElegantFalconuz. Od kilku lat buduję nowoczesne
+            aplikacje front-end oraz pluginy Paper/Bukkit kompatybilne
+            ze wszystkimi wersjami Minecraft. Cenię sobie czytelny kod,
+            wydajność i dobrą dokumentację.
+          </p>
+        </div>
+        <img src="assets/avatar.svg" alt="Avatar" class="about__img" />
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>Wybrane projekty</h2>
+        <div class="grid">
+          <article class="card">
+            <img src="assets/project1.png" alt="Projekt 1" />
+            <h3>SmartScheduler</h3>
+            <p>Plugin Paper do zarządzania zadaniami async / sync.</p>
+            <a href="https://github.com/ElegantFalconuz/SmartScheduler" target="_blank" rel="noopener" class="btn--small">GitHub</a>
+          </article>
+
+          <article class="card">
+            <img src="assets/project2.png" alt="Projekt 2" />
+            <h3>DarkTheme.js</h3>
+            <p>Lekka biblioteka JS do przełączania motywów.</p>
+            <a href="https://github.com/ElegantFalconuz/DarkTheme.js" target="_blank" rel="noopener" class="btn--small">GitHub</a>
+          </article>
+
+          <article class="card">
+            <img src="assets/project3.png" alt="Projekt 3" />
+            <h3>PaperUtility</h3>
+            <p>Zestaw narzędzi API Paper do zarządzania eventami.</p>
+            <a href="https://github.com/ElegantFalconuz/PaperUtility" target="_blank" rel="noopener" class="btn--small">GitHub</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Kontakt</h2>
+        <form action="https://formspree.io/f/your-id" method="POST" class="contact__form">
+          <label>
+            Imię
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            E-mail
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Wiadomość
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn">Wyślij</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <small>© 2025 ElegantFalconuz • DarkCode</small>
+      <a href="https://github.com/ElegantFalconuz" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
