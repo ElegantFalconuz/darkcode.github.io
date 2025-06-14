@@ -1,1 +1,1 @@
-# darkcode.github.io
+![Static Badge](https://img.shields.io/badge/:badgeContent)
